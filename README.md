@@ -155,6 +155,26 @@ CHANGELOG
 - Added Google Maps links for both locations
 - Resolved merge conflict with remote repository
 
+
+17 September 2026 (Part 2)
+
+- Created external stylesheet css/style.css.
+- Linked stylesheet and viewport meta tag to all five HTML pages.
+- Added CSS reset to normalise browser defaults.
+- Applied base styles (font, colour, margins).
+- Applied typography styles (font-family, size, weight, line-height,
+  letter-spacing) to headings and paragraphs.
+- Applied Flexbox layout to navigation and category list.
+- Applied CSS Grid layout to product listings.
+- Applied visual styles (colours, borders, border-radius, box-shadow).
+- Added :hover, :focus and :active pseudo-classes.
+- Added media queries at 900px and 600px for tablet and mobile.
+- Added srcset and sizes attributes to hero image.
+- Fixed typos "Moussse" and "Dounut" in products.html.
+- Fixed mismatched <b></strong> tag in enquiry.html.
+- Corrected the Google Maps link for Kuils River location.
+- Tested at desktop, tablet and mobile widths using DevTools.
+
 REFERENCES
 
 Online Sources (For images Delicious-Delicacies Facebook was used)
