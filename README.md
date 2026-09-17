@@ -155,7 +155,6 @@ CHANGELOG
 - Added Google Maps links for both locations
 - Resolved merge conflict with remote repository
 
-
 17 September 2026 (Part 2)
 
 - Created external stylesheet css/style.css.
@@ -173,7 +172,38 @@ CHANGELOG
 - Fixed typos "Moussse" and "Dounut" in products.html.
 - Fixed mismatched <b></strong> tag in enquiry.html.
 - Corrected the Google Maps link for Kuils River location.
-- Tested at desktop, tablet and mobile widths using DevTools.
+- Tested at desktop, tablet and mobile widths using DevTools on Chrome.
+- Fixed Title name to display correctly.
+- Fixed Responsive Design by placing link to CSS in head and not header tag.
+- - Tested at desktop, tablet and mobile widths using DevTools on Microsoft Edge.
+
+
+RESPONSIVE DESIGN TESTING
+
+The website was tested at three viewport widths using Chrome DevTools
+device emulation. Screenshots were taken at each width to confirm that
+the layout, navigation and typography respond correctly.
+
+Desktop View (1200px)
+
+![Desktop screenshot](screenshot-desktop.png)
+At 1200px the navigation displays horizontally, product items appear in
+a multi-column grid, and full-size images are shown.
+
+Tablet View (768px)
+
+![Tablet screenshot](screenshot-tablet.png)
+
+At 768px the product grid reduces to fewer columns and spacing is
+reduced. The navigation remains horizontal.
+
+
+Mobile View (375px)
+
+![Mobile screenshot](screenshot-mobile.png)
+
+At 375px the navigation stacks vertically, the product grid becomes a
+single column, and padding is reduced for comfortable reading.
 
 REFERENCES
 
