@@ -259,7 +259,7 @@ footer a:hover {
 }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 425px) {
     body {
         font-size: 0.95rem;
     }
