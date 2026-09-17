@@ -6,7 +6,8 @@
 <body>
 
     <!-- HEADER -->
-     <header>
+     <header <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
         <nav>
             <p>
                 <a href="index.html">Home</a> |
@@ -23,9 +24,12 @@
     <main>
 
         <!-- HERO -->
-        <section>
-            <img src="images/Hero.jpg" alt="Hero image" width="30%">
+        <section class="hero">
             <h1 id="hero-heading">Welcome to Delicious Delicacies</h1>
+            <img src="images/Hero.jpg"
+     srcset="images/Hero.jpg 1200w"
+     sizes="(max-width: 600px) 100vw, 400px"
+     alt="Hero image">
             <p>
                 <b>Let's savour the flavour</b>
             </p>
@@ -35,7 +39,7 @@
         <!-- FEATURED PRODUCTS -->
         <section>
             <h2 id="specials_heading">Weekend Specials</h2>
-            <ul>
+            <ul class="product-grid">
                 <li>
                     <h3 id="milkcups_title">Milk Cups</h3>
                     <img src="images/Milk_Cups.jpg" alt="Milk cups" width="200">
@@ -62,7 +66,7 @@
         <!-- PRODUCT CATEGORIES -->
         <section>
             <h2 id="categories-heading">Our Products</h2>
-            <ul>
+            <ul class="category-list">
                 <li><a href="products.html#cakes">Cakes</a></li>
                 <li><a href="products.html#treats">Treats</a></li>
                 <li><a href="products.html#donuts">Donuts & Cupcakes</a></li>
@@ -70,14 +74,14 @@
         </section>
 
         <!-- CUSTOM CAKES -->
-        <section>
+        <section class="callout-box">
             <h2 id="custom-cakes-heading">Custom Cakes for Every Occasion</h2>
             <p>From birthdays to weddings, we create cakes to make memories.</p>
             <a href="enquiry.html">Request a quote on a custom cake</a>
         </section>
 
         <!-- Newsletter signup -->
-        <section>
+        <section class="callout-box">
             <h2 id="newsletter-heading">Signup for Delicious Delicacies Updates </h2>
             <p><b>Email:</b> newsletter@deliciousdelicacies.co.za</p>
         </section>
