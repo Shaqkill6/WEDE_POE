@@ -65,8 +65,7 @@ if (contactForm) {
     });
 }
 
-// PRODUCT SEARCH FILTER (Dynamic Content)
-
+// PRODUCT SEARCH FILTER
 const searchInput = document.getElementById('searchInput');
 if (searchInput) {
     searchInput.addEventListener('keyup', function() {
@@ -76,38 +75,34 @@ if (searchInput) {
         products.forEach(function(product) {
             const text = product.textContent.toLowerCase();
             if (text.includes(filterValue)) {
-                product.style.display = "block";
+                product.style.display = "block"; // Show
             } else {
-                product.style.display = "none";
+                product.style.display = "none";  // Hide
             }
         });
     });
 }
 
-// Image Lightbox / Modal Functionality
+// LIGHTBOX GALLERY
 const lightboxImg = document.getElementById('lightboxImg');
 const myModal = document.getElementById('myModal');
 const closeModal = document.getElementById('closeModal');
 
 if (lightboxImg && myModal) {
-    // Open modal when image clicked
     lightboxImg.addEventListener('click', function() {
         myModal.style.display = "block";
     });
 
-    // Close modal when X clicked
     closeModal.addEventListener('click', function() {
         myModal.style.display = "none";
     });
 
-    // Close modal when clicking outside the image
     myModal.addEventListener('click', function(event) {
         if (event.target === myModal) {
             myModal.style.display = "none";
         }
     });
 }
-
 // Accodion Interactive Element
 var acc = document.getElementsByClassName("accordion");
 var i;
