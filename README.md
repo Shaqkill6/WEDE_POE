@@ -119,7 +119,7 @@ products.html
 enquiry.html
 contact.html
 README.txt
-images/
+Images/
 Logo.jpg
 Hero.jpg
 Chocolate_Cakes.jpg
