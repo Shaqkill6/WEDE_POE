@@ -25,6 +25,11 @@ The website consists of five pages:
 5. Contact - Two locations Belhar and Kuils River, contact details, and
    opening hours.
 
+LIVE WEBSITE LINK
+The website is deployed using GitHub Pages and can be viewed live at:
+https://shaqkill6.github.io/WEDE_POE/
+
+
 WEBSITE GOALS AND OBJECTIVES
 
 - Establish Online Presence: Make the bakery discoverable to customers
@@ -136,6 +141,34 @@ Technologies Used
 - Git: Version control for tracking changes.
 - GitHub: Remote repository for collaboration and submission.
 
+
+PART 3 FEATURES IMPLEMENTED:
+1. JavaScript Enhancements
+--------------------------
+- Form Validation: JavaScript checks that required fields are filled in 
+  before submitting the Enquiry and Contact forms.
+- Dynamic Content (Search Filter): A search bar on the Products page allows 
+  users to filter products by typing keywords.
+- Interactive Elements (Lightbox): Clicking the Custom Cakes image on the 
+  Products page opens a larger modal view.
+
+2. Forms
+-----------------------------------
+- Enquiry Form: Collects name, email, phone, occasion, date, and design ideas.
+- Contact Form: Collects name, email, and a general message.
+- HTML5 validation attributes (required, type="email") are used alongside 
+  JavaScript validation.
+
+3. SEO (Search Engine Optimization)
+-----------------------------------
+- Meta descriptions and keywords added to all HTML pages.
+- Semantic HTML (h1, h2, h3, nav, main, footer) used throughout.
+- Image alt tags applied to all images.
+- robots.txt file created to instruct search engines.
+- sitemap.xml file created to map the site structure.
+- Mobile-friendly responsive design implemented in Part 2.
+
+
 CHANGELOG
 
 6 August 2026 (Initial Commit)
@@ -175,7 +208,18 @@ CHANGELOG
 - Tested at desktop, tablet and mobile widths using DevTools on Chrome.
 - Fixed Title name to display correctly.
 - Fixed Responsive Design by placing link to CSS in head and not header tag.
-- - Tested at desktop, tablet and mobile widths using DevTools on Microsoft Edge.
+- Tested at desktop, tablet and mobile widths using DevTools on Microsoft Edge.
+ 
+01 November 2026 (Part 3)
+
+- Added real HTML forms to enquiry.html and contact.html.
+- Created js/script.js for client-side form validation.
+- Added search filtering to products.html.
+- Added a lightbox modal to products.html.
+- Added SEO meta tags (descriptions, keywords) to all HTML files.
+- Created robots.txt and sitemap.xml.
+- Deployed the website to GitHub Pages.
+- Updated README with Part 3 details.
 
 
 RESPONSIVE DESIGN TESTING
