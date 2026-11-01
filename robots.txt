@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shaqkill6.github.io/WEDE_POE_PART1/sitemap.xml

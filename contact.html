@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Locations & Hours - Delicious Delicacies</title>
+    <meta name="description" content="Find our bakery locations in Belhar and Kuils River. View our opening hours, phone numbers, and interactive Google Maps directions.">
+    <meta name="keywords" content="contact bakery Belhar, bakery location Kuils River, Delicious Delicacies hours, bakery near me">
     <link rel="stylesheet" href="css/style.css">
-    <title>Contact - Delicious Delicacies</title>
 </head>
 <body>
 
@@ -36,12 +38,15 @@
                 <address>
                     <b>17 Keisergracht street Belhar, Cape Town</b>
                     <br>
-                    <img src="images/First_Location.jpg" alt="Map of Belhar location" width="400" height="300">
-                    <p>
-                        <a href="https://www.google.com/maps?q=17+Keisergracht+street+Belhar+Cape+Town" target="_blank">
-                        View on Google Maps
-                        </a>
-                    </p>
+                    <iframe 
+                     src="https://maps.google.com/maps?q=17%20Keisergracht%20Street,%20Belhar,%20Cape%20Town&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                     width="100%" 
+                     height="300" 
+                     style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                     <br>
                 </address>
                 <p>
@@ -57,12 +62,15 @@
                 <h3 id="kuilsriver_location_heading">Kuilsriver Bakery</h3>
                 <address>
                     <b>KuilsRiver, Opposite OK Grocer Highbury Park, CapeTown</b><br>
-                    <img src="images/Second_Location.jpg" alt="Map of OK Grocer Highbury Park location" width="400" height="300">
-                    <p>
-                        <a href="https://www.google.com/maps?q=OK+Grocer+Highbury+Park+Highbury+Road+Kuils+River+Cape+Town" target="_blank">
-                        View on Google Maps
-                        </a>
-                    </p>
+                    <iframe 
+                    src="https://maps.google.com/maps?q=OK%20Grocer%20Highbury%20Park,%20202%20Highbury%20Road,%20Kuils%20River&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                     <br>
                 </address>
                 <p>
@@ -78,16 +86,26 @@
 
             <!-- Quick Contact -->
         <section class="callout-box">
-            <h2 id="quick_contact_heading">Quick Contact</h2>
-            <p>You can reach us directly using the details above, or provide your details and we will call you back.</p>
-            <p>Please include:</p>
-            <ul>
-                <li><b>Your name</b></li>
-                <li><b>Your email</b></li>
-                <li><b>Your message</b></li>
-            </ul>
-            <p>Send your message to <a href="mailto:info@deliciousdelicacies.co.za">info@deliciousdelicacies.co.za</a> and we’ll respond within 24 hours.</p>
-        </section>
+    <h2 id="quick_contact_heading">Quick Contact</h2>
+    <p>Provide your details and we will call you back.</p>
+    
+    <form id="contactForm">
+        <p>
+            <label for="c-name">Your Name (required):</label><br>
+            <input type="text" id="c-name" name="c-name" required>
+        </p>
+        <p>
+            <label for="c-email">Your Email (required):</label><br>
+            <input type="email" id="c-email" name="c-email" required>
+        </p>
+        <p>
+            <label for="c-message">Your Message (required):</label><br>
+            <textarea id="c-message" name="c-message" rows="4" required></textarea>
+        </p>
+        <button type="submit">Send Message</button>
+        <div id="contactMessage" style="margin-top: 10px; font-weight: bold;"></div>
+    </form>
+</section>
     </main>
 
     <!-- FOOTER -->
@@ -101,6 +119,10 @@
         <p>&copy; 2026 Delicious Delicacies Bakery Belhar, Cape Town</p>
         <hr>
     </footer>
-
+ <div id="myModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); text-align:center; z-index:1000;">
+    <span id="closeModal" style="color:white; font-size:40px; cursor:pointer; position:absolute; top:20px; right:40px;">&times;</span>
+    <img src="images/Custom_Cakes.jpg" alt="Large custom cake" style="max-width:90%; max-height:90%; margin-top:5%;">
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>

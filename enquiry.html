@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries | Custom Cakes & General Questions</title>
+    <meta name="description" content="Order a custom cake for your next celebration or send a general enquiry to Delicious Delicacies in Belhar, Cape Town. We respond within 24 hours.">
+    <meta name="keywords" content="custom cakes Belhar, order cake Cape Town, bakery enquiry, wedding cakes Belhar, birthday cakes">
     <link rel="stylesheet" href="css/style.css">
-    <title>Enquiry - Delicious Delicacies</title>
 </head>
 <body>
 
@@ -27,36 +29,89 @@
         <p>Fill in the details below and we'll get back to you within 24 hours.</p>
 
         <!-- Custom Cake Request -->
-        <section class="callout-box">
-            <h2 id="custom_cake_form_heading">Custom Cake Request</h2>
-            <p>To order a custom cake, please provide the following details:</p>
-            <ul>
-                <li><b>Your full name</b> (required)</li>
-                <li><b>Email address</b> (required)</li>
-                <li><b>Phone number</b></li>
-                <li><b>Occasion</b> (Birthday, Wedding, Anniversary, Corporate, Other)</li>
-                <li><b>Date needed</b> (required)</li>
-                <li><b>Number of servings</b></li>
-                <li><b>Preferred flavour(s)</b> (e.g., chocolate, vanilla, red velvet)</li>
-                <li><b>Dietary requirements</b> (gluten free, vegan, etc.)</li>
-                <li><b>Design ideas / reference images</b> (describe your dream cake)</li>
-                <li><b>Estimated budget</b> (e.g., R 500 to R 1,000)</li>
-            </ul>
-            <p><b>To place your order, email us at <a href="mailto:cakes@deliciousdelicacies.co.za">cakes@deliciousdelicacies.co.za</a> or call +27 82 123 4567.</b></p>
-        </section>
+         <section class="callout-box">
+    <h2 id="custom_cake_form_heading">Custom Cake Request</h2>
+    <p>To order a custom cake, please provide the following details:</p>
+    
+    <!-- The form with HTML5 validation -->
+    <form id="cakeForm">
+        <p>
+            <label for="name">Full Name (required):</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email (required):</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+            <small>(10 digits only)</small>
+        </p>
+        <p>
+            <label for="occasion">Occasion (required):</label><br>
+            <select id="occasion" name="occasion" required>
+                <option value="">Select an occasion</option>
+                <option value="birthday">Birthday</option>
+                <option value="wedding">Wedding</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+        <p>
+            <label for="date">Date Needed (required):</label><br>
+            <input type="date" id="date" name="date" required>
+        </p>
+        <p>
+            <label for="message">Design Ideas:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+        <button type="submit">Submit Enquiry</button>
+        <!-- Div to show JavaScript messages -->
+        <div id="formMessage" style="margin-top: 10px; font-weight: bold;"></div>
+    </form>
+</section>
 
         <!-- General Enquiry-->
         <section class="callout-box">
-            <h2 id="general_enquiry_heading">General Enquiry</h2>
-            <p>For catering, wholesale, or other questions, please provide:</p>
-            <ul>
-                <li><b>Your name</b> (required)</li>
-                <li><b>Email address</b> (required)</li>
-                <li><b>Subject</b></li>
-                <li><b>Message</b> (required)</li>
-            </ul>
-            <p>Send your enquiry to <a href="mailto:info@deliciousdelicacies.co.za">info@deliciousdelicacies.co.za</a> or use the details on our <a href="contact.html">Contact page</a>.</p>
-        </section>
+    <h2 id="general_enquiry_heading">General Enquiry</h2>
+    <p>For catering, wholesale, or other questions, please fill in the form below:</p>
+    
+    <form id="generalEnquiryForm">
+        <p>
+            <label for="g-name">Your Name (required):</label><br>
+            <input type="text" id="g-name" name="g-name" required>
+        </p>
+        <p>
+            <label for="g-email">Email Address (required):</label><br>
+            <input type="email" id="g-email" name="g-email" required>
+        </p>
+        <p>
+            <label for="g-subject">Subject:</label><br>
+            <input type="text" id="g-subject" name="g-subject">
+        </p>
+        <p>
+            <label for="g-message">Message (required):</label><br>
+            <textarea id="g-message" name="g-message" rows="4" required></textarea>
+        </p>
+        <button type="submit">Submit Enquiry</button>
+        <div id="generalEnquiryMessage" style="margin-top: 10px; font-weight: bold;"></div>
+    </form>
+</section>
+
+<section class="callout-box">
+    <h2 id="faq-heading">Frequently Asked Questions</h2>
+    
+    <button class="accordion">Do you offer gluten-free options?</button>
+    <div class="panel">
+        <p>Yes! We offer gluten-free sourdough and vegan brownies. Please ask in-store for daily availability.</p>
+    </div>
+
+    <button class="accordion">How far in advance should I order a custom cake?</button>
+    <div class="panel">
+        <p>We recommend ordering at least 5 to 7 days in advance for custom cakes to ensure we have enough time to perfect your design.</p>
+    </div>
+</section>
     </main>
 
     <!--FOOTER-->
@@ -70,6 +125,10 @@
         <p>&copy; 2026 Delicious Delicacies Bakery Belhar, Cape Town</p>
         <hr>
     </footer>
-
+ <div id="myModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); text-align:center; z-index:1000;">
+    <span id="closeModal" style="color:white; font-size:40px; cursor:pointer; position:absolute; top:20px; right:40px;">&times;</span>
+    <img src="images/Custom_Cakes.jpg" alt="Large custom cake" style="max-width:90%; max-height:90%; margin-top:5%;">
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
