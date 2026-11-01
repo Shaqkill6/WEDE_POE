@@ -25,6 +25,11 @@ The website consists of five pages:
 5. Contact - Two locations Belhar and Kuils River, contact details, and
    opening hours.
 
+LIVE WEBSITE LINK
+The website is deployed using GitHub Pages and can be viewed live at:
+https://shaqkill6.github.io/WEDE_POE/
+
+
 WEBSITE GOALS AND OBJECTIVES
 
 - Establish Online Presence: Make the bakery discoverable to customers
@@ -136,6 +141,34 @@ Technologies Used
 - Git: Version control for tracking changes.
 - GitHub: Remote repository for collaboration and submission.
 
+
+PART 3 FEATURES IMPLEMENTED:
+1. JavaScript Enhancements
+--------------------------
+- Form Validation: JavaScript checks that required fields are filled in 
+  before submitting the Enquiry and Contact forms.
+- Dynamic Content (Search Filter): A search bar on the Products page allows 
+  users to filter products by typing keywords.
+- Interactive Elements (Lightbox): Clicking the Custom Cakes image on the 
+  Products page opens a larger modal view.
+
+2. Forms
+-----------------------------------
+- Enquiry Form: Collects name, email, phone, occasion, date, and design ideas.
+- Contact Form: Collects name, email, and a general message.
+- HTML5 validation attributes (required, type="email") are used alongside 
+  JavaScript validation.
+
+3. SEO (Search Engine Optimization)
+-----------------------------------
+- Meta descriptions and keywords added to all HTML pages.
+- Semantic HTML (h1, h2, h3, nav, main, footer) used throughout.
+- Image alt tags applied to all images.
+- robots.txt file created to instruct search engines.
+- sitemap.xml file created to map the site structure.
+- Mobile-friendly responsive design implemented in Part 2.
+
+
 CHANGELOG
 
 6 August 2026 (Initial Commit)
@@ -155,7 +188,6 @@ CHANGELOG
 - Added Google Maps links for both locations
 - Resolved merge conflict with remote repository
 
-
 17 September 2026 (Part 2)
 
 - Created external stylesheet css/style.css.
@@ -173,7 +205,49 @@ CHANGELOG
 - Fixed typos "Moussse" and "Dounut" in products.html.
 - Fixed mismatched <b></strong> tag in enquiry.html.
 - Corrected the Google Maps link for Kuils River location.
-- Tested at desktop, tablet and mobile widths using DevTools.
+- Tested at desktop, tablet and mobile widths using DevTools on Chrome.
+- Fixed Title name to display correctly.
+- Fixed Responsive Design by placing link to CSS in head and not header tag.
+- Tested at desktop, tablet and mobile widths using DevTools on Microsoft Edge.
+ 
+01 November 2026 (Part 3)
+
+- Added real HTML forms to enquiry.html and contact.html.
+- Created js/script.js for client-side form validation.
+- Added search filtering to products.html.
+- Added a lightbox modal to products.html.
+- Added SEO meta tags (descriptions, keywords) to all HTML files.
+- Created robots.txt and sitemap.xml.
+- Deployed the website to GitHub Pages.
+- Updated README with Part 3 details.
+
+
+RESPONSIVE DESIGN TESTING
+
+The website was tested at three viewport widths using Chrome DevTools
+device emulation. Screenshots were taken at each width to confirm that
+the layout, navigation and typography respond correctly.
+
+Desktop View (1200px)
+
+![Desktop screenshot](screenshot-desktop.png)
+At 1200px the navigation displays horizontally, product items appear in
+a multi-column grid, and full-size images are shown.
+
+Tablet View (768px)
+
+![Tablet screenshot](screenshot-tablet.png)
+
+At 768px the product grid reduces to fewer columns and spacing is
+reduced. The navigation remains horizontal.
+
+
+Mobile View (375px)
+
+![Mobile screenshot](screenshot-mobile.png)
+
+At 375px the navigation stacks vertically, the product grid becomes a
+single column, and padding is reduced for comfortable reading.
 
 REFERENCES
 
